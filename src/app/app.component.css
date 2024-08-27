@@ -1,0 +1,13 @@
+main {
+    width: 90%;
+    display: grid;
+    grid-auto-flow: row;
+    color: white;
+}
+.navbar {
+    
+    width: 20px;
+    margin: auto;
+    background-color: #455d7a;
+    display: inline-block;
+}
