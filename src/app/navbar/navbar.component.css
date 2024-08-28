@@ -1,64 +1,82 @@
-a:nth-child(1) {
-    color: white;
-  }
-a:nth-child(2):hover { 
-    color: red;
-    animation: animate 2s ease-in;
-  }
-
-a{
-    text-transform: none;
-    position: absolute;
-    transform: translate(calc(50vw - 50%), -55%);
-    font-size: 2rem;
+/* #233142 dark
+#455d7a grey
+#f95959 red
+#e3e3e3 white */
+.wrapper a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #e3e3e3;
+  padding: 14px 16px;
+  font-size: 17px;
 }
 
-  @keyframes animate {
-    0% {
-      clip-path: polygon(
-        0 90%,
-        5% 71%,
-        24% 86%,
-        34% 71%,
-        45% 64%,
-        51% 45%,
-        51% 45%,
-        74% 21%,
-        89% 35%,
-        100% 42%,
-        100% 100%,
-        0 100%
-      );
-    }
-    25% {
-      clip-path: polygon(
-        0 70%,
-        5% 60%,
-        24% 40%,
-        34% 35%,
-        45% 20%,
-        51% 45%,
-        51% 45%,
-        74% 36%,
-        89% 49%,
-        100% 60%,
-        100% 100%,
-        0 100%
-      );
-    }
-    50% {
-      clip-path: polygon(0 0%, 9% 30%, 24% 35%,
-                          34% 45%, 45% 40%, 51% 35%,57% 45%,
-                          77% 26%, 89% 20%, 100% 10%, 100% 100%,
-                          0 100%);
-    }
-    75% {clip-path: polygon(0 0%, 9% 2%, 24% 5%,
-                          34% 3%, 45% 6%, 51% 9%,57% 2%,
-                          77% 5%, 89% 2%, 100% 1%, 100% 100%,
-                          0 100%);
-  
-    }
-    100% {
-      clip-path: polygon();
-    }
+.wrapper {
+  justify-content: center;
+  margin-inline: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.wrapper .navbar-link {
+  float: left;
+}
+
+.wrapper .site-mode {
+  float: right;
+}
+
+.wrapper a:hover {
+  color: #f95959;
+}
+
+.wrapper a.active {
+  background-color: #04aa6d;
+  color: rgb(255, 255, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.wrapper .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .wrapper a:not(:first-child) {
+    display: none;
   }
+  .wrapper a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .wrapper.responsive {
+    position: relative;
+  }
+  .wrapper.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .wrapper.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.icons {
+  background: #233142;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 00px;
+  position: fixed;
+  right: 0;
+  top: 30%;
+}
+.icons img {
+  width: 90px;
+}

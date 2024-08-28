@@ -1,0 +1,21 @@
+.wrapper {
+  position: relative;
+  margin-inline: auto;
+  margin-top: 2%;
+
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 900px;
+  min-height: 1000px;
+}
+
+label {
+  top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-inline: auto;
+  position: absolute;
+  background-color: #233142;
+  padding: 0 5px;
+}
