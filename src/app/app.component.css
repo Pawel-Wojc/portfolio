@@ -3,3 +3,22 @@ main {
   grid-auto-flow: row;
   color: white;
 }
+.icons {
+  padding: 10px;
+  background: #233142;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 0px;
+  position: fixed;
+  right: 0;
+  top: 30%;
+}
+.icons img {
+  width: 90px;
+}
+
+@media screen and (max-width: 600px) {
+  .icons {
+    display: none;
+  }
+}

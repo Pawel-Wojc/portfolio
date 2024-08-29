@@ -2,6 +2,18 @@
 #455d7a grey
 #f95959 red
 #e3e3e3 white */
+.wrapper {
+  margin: 5px;
+  position: fixed;
+  justify-content: center;
+  margin-inline: auto;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #455d7a;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+}
 .wrapper a {
   display: block;
   text-align: center;
@@ -9,13 +21,6 @@
   color: #e3e3e3;
   padding: 14px 16px;
   font-size: 17px;
-}
-
-.wrapper {
-  justify-content: center;
-  margin-inline: auto;
-  overflow: hidden;
-  border-radius: 5px;
 }
 
 .wrapper .navbar-link {
@@ -66,17 +71,4 @@
     display: block;
     text-align: left;
   }
-}
-
-.icons {
-  background: #233142;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  margin: 00px;
-  position: fixed;
-  right: 0;
-  top: 30%;
-}
-.icons img {
-  width: 90px;
 }
