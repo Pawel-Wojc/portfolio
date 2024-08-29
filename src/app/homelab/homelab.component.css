@@ -39,3 +39,21 @@
     background-position: right top;
   }
 }
+
+box-container {
+  display: flex;
+  justify-content: space-between; /* Distributes space between the two divs */
+  gap: 20px; /* Optional: Adjusts the gap between the divs */
+  padding: 10px;
+}
+
+.left,
+.right {
+  width: calc(50% - 10px);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}

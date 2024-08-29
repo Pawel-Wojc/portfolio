@@ -9,26 +9,38 @@
   margin-inline: auto;
   overflow: hidden;
   border-radius: 5px;
-  background-color: #455d7a;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   top: 5px;
   left: 5px;
   right: 5px;
+  z-index: 9999;
+  font-size: 17px;
 }
 .wrapper a {
+  float: left;
   display: block;
   text-align: center;
   text-decoration: none;
   color: #e3e3e3;
   padding: 14px 16px;
+}
+
+.wrapper button {
+  font-family: inherit;
+  font-weight: inherit;
+  padding: 14px 16px;
   font-size: 17px;
-}
-
-.wrapper .navbar-link {
-  float: left;
-}
-
-.wrapper .site-mode {
+  color: #e3e3e3;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
   float: right;
+  text-decoration: none;
+}
+.wrapper button:hover {
+  color: #f95959;
 }
 
 .wrapper a:hover {
@@ -59,7 +71,7 @@
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .wrapper.responsive {
-    position: relative;
+    position: fixed;
   }
   .wrapper.responsive a.icon {
     position: absolute;
