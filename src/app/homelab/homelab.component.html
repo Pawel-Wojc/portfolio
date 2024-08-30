@@ -2,25 +2,41 @@
   <div class="text-container">
     <h1>HOMELAB</h1>
   </div>
-  <!-- <img src="../../assets/network-2-switches.jpg" alt="xd" /> -->
   <div class="box-container">
-    <div class="left box">
-      Truenas
+    <div class="left">
+      <img src="../../assets/truenas_scale-logo.png" alt="TrueNas Scale" />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-        quaerat maiores commodi delectus rerum ut sed in reiciendis! Suscipit
-        pariatur fugiat consectetur optio culpa delectus, nostrum dolore
-        sapiente odit harum.
+        The person who introduced me to TrueNAS Core and inspired the idea was
+        one of my college professors. He always said that as an IT guy, you
+        should have your own Google Drive. Honestly, it wasn't a bad idea—not
+        just for the functionality itself, but for the journey you undertake to
+        build something like that. So, I bought a motherboard, 32 GB of RAM
+        #ZFS, and a power supply. I chose the Corsair RM550x because, according
+        to tests, it had the best efficiency in the lower power consumption
+        ranges, which was exactly what I needed. And that's how my personal
+        server was born. Installing this system is pretty straightforward—up
+        until the point where you want the system, which takes up about 20 GB,
+        not to use the entire disk. However, by editing the installation script,
+        you can work around that. Currently, I use my server for backups, but it
+        also serves as a station for recording footage from home cameras and for
+        syncing photos from phones to NextCloud for me and my household.
       </p>
     </div>
 
-    <div class="right box">
-      Proxmox
+    <div class="right">
+      <img src="../../assets/proxmox_logo_.png" alt="Proxmox" />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste
-        dolorem incidunt nesciunt eum reiciendis ut iure explicabo dolor
-        dignissimos itaque, earum odit harum facere, sed quia ad voluptatum
-        eaque!
+        Currently, I have a Proxmox "cluster" made from two terminals. One is an
+        HP t620 with 4 cores and 16GB of RAM, and the other is a Futro S920 with
+        4 cores and, unfortunately, only 4GB of RAM for now. (Yes, I know that a
+        cluster with only two nodes is not an ideal solution, but I'm
+        considering using a Raspberry Pi as a quorum disk and also as a backup
+        DNS server.) What do I use this hypervisor for? I host a few of my own
+        services, primarily Tailscale for access to my home network and the
+        TrueNAS server, a Cloudflare client so that household members have
+        access to Home Assistant, my own DNS - AdGuard Home, Nginx Proxy
+        Manager, Portainer for Docker, Home Assistant, and Trilium for
+        note-taking.
       </p>
     </div>
   </div>

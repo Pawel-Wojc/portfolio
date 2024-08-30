@@ -1,21 +1,20 @@
 .wrapper {
-  justify-content: center;
   border: 2px solid white;
+  margin-top: 40px;
 }
 
 .text-container {
   height: 100%;
   width: 100%;
-  display: flex;
   justify-content: center;
 }
 
 .text-container h1 {
   margin: 0;
-  font-size: clamp(1rem, -0.875rem + 8.333vw, 5rem);
+  font-size: clamp(4rem, -0.875rem + 8.333vw, 5rem);
   color: rgba(225, 225, 225, 0.01);
   background-image: url("../../assets/network-2-switches.jpg");
-  background-size: 900px;
+  background-size: 500px;
   background-repeat: repeat;
   -webkit-background-clip: text;
   animation: animate 15s ease-in-out infinite;
@@ -40,20 +39,40 @@
   }
 }
 
-box-container {
+.box-container {
   display: flex;
-  justify-content: space-between; /* Distributes space between the two divs */
-  gap: 20px; /* Optional: Adjusts the gap between the divs */
-  padding: 10px;
+  justify-content: space-around;
 }
 
 .left,
 .right {
-  width: calc(50% - 10px);
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
+  position: relative;
+  padding: 10px;
   width: 25%;
+  height: 20%;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
+}
+img {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .box-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    position: relative;
+    width: auto;
+  }
+  img {
+  }
 }
