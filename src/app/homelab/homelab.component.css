@@ -1,7 +1,7 @@
 .wrapper {
   position: relative;
   margin-top: 40px;
-  height: 95vh;
+  height: 96vh;
 }
 
 .text-container {
@@ -10,33 +10,11 @@
 }
 
 .text-container h1 {
+  color: #c1c1c1;
   margin: 0;
   font-size: clamp(4rem, -0.875rem + 8.333vw, 5rem);
-  color: rgba(225, 225, 225, 0.01);
-  background-image: url("../../assets/network-2-switches.jpg");
-  background-size: 500px;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  animation: animate 15s ease-in-out infinite;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
-}
-
-@keyframes animate {
-  0%,
-  100% {
-    background-position: left top;
-  }
-  25% {
-    background-position: right bottom;
-  }
-  50% {
-    background-position: left bottom;
-  }
-  75% {
-    background-position: right top;
-  }
 }
 
 .box-container {
@@ -64,6 +42,9 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
+  .wrapper {
+    height: 100%;
+  }
   .box-container {
     justify-content: center;
     flex-direction: column;
@@ -73,6 +54,13 @@ img {
     position: relative;
     width: auto;
   }
-  img {
-  }
+}
+
+a {
+  float: right;
+  text-decoration: none;
+  color: #e3e3e3;
+}
+a:hover {
+  color: #f95959;
 }

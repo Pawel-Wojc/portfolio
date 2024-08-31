@@ -1,11 +1,9 @@
 main {
   display: grid;
-
-  color: white;
+  color: #e3e3e3;
 }
 .icons {
   padding: 10px;
-  background: #233142;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   margin: 0px;
@@ -14,16 +12,20 @@ main {
   top: 30%;
 }
 .icons img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1899%)
+    hue-rotate(147deg) brightness(113%) contrast(78%);
+
   width: 90px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .icons {
     display: none;
   }
 }
 
 .circles {
+  z-index: -1;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,7 +40,7 @@ main {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(117, 48, 48, 0.5);
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
@@ -130,4 +132,9 @@ main {
     opacity: 0;
     border-radius: 50%;
   }
+}
+
+.footer {
+  display: block;
+  bottom: 0px;
 }

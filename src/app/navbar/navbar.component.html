@@ -4,12 +4,14 @@
 />
 
 <div [ngClass]="navbarClass" class="wrapper">
-  <a href="#home" (click)="changeNavbarType()">HOME</a>
-  <a href="#homelab" (click)="changeNavbarType()"> MY HOMELAB </a>
+  <a style="float: left">Paweł Wójcik</a>
 
   <a class="icon" (click)="changeNavbarType()">
     <i class="fa fa-bars"></i>
   </a>
-
   <button (click)="changeMode()">MODE</button>
+  <a routerLink="/projects" (click)="changeNavbarType()"> PROJECTS </a>
+  <a href="#homelab" (click)="changeNavbarType()"> MY HOMELAB </a>
+
+  <a href="#home" routerLink="/" (click)="changeNavbarType()">HOME</a>
 </div>

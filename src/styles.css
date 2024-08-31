@@ -12,13 +12,24 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-
-  background-image: radial-gradient(
+  background-image: linear-gradient(
+    to top,
+    rgb(9, 32, 63) 0%,
+    rgb(83, 120, 149) 100%
+  );
+  /* background-image: #606c38; */
+  /* radial-gradient(
+    circle,
+    rgba(40, 54, 24, 1) 0%,
+    rgba(96, 108, 56, 1) 65%,
+    rgba(133, 147, 89, 1) 100%
+  ); */
+  /* radial-gradient(
     circle,
     rgba(35, 49, 66, 1) 0%,
     rgba(49, 68, 92, 1) 70%,
     rgba(63, 85, 115, 1) 100%
-  );
+  ); */
 }
 
 /* #233142 dark

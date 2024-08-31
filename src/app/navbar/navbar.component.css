@@ -1,24 +1,17 @@
-/* #233142 dark
-#455d7a grey
-#f95959 red
-#e3e3e3 white */
 .wrapper {
   margin: 5px;
   position: fixed;
-  justify-content: center;
-  margin-inline: auto;
-  overflow: hidden;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.15);
+  border: #e3e3e3 1px solid;
   backdrop-filter: blur(5px);
   top: 5px;
   left: 5px;
   right: 5px;
-  z-index: 9999;
+  z-index: 10;
   font-size: 17px;
 }
 .wrapper a {
-  float: left;
+  float: right;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -45,11 +38,6 @@
 
 .wrapper a:hover {
   color: #f95959;
-}
-
-.wrapper a.active {
-  background-color: #04aa6d;
-  color: rgb(255, 255, 255);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
