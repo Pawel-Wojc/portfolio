@@ -1,20 +1,6 @@
 .wrapper {
+  padding-top: 60px;
   position: relative;
-  margin-top: 40px;
-  height: 96vh;
-}
-
-.text-container {
-  width: 100%;
-  justify-content: center;
-}
-
-.text-container h1 {
-  color: #c1c1c1;
-  margin: 0;
-  font-size: clamp(4rem, -0.875rem + 8.333vw, 5rem);
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .box-container {
@@ -24,8 +10,6 @@
 
 .left,
 .right {
-  position: relative;
-  padding: 10px;
   width: 25%;
   height: 20%;
   margin: 10px;
@@ -33,6 +17,10 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
+
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
 }
 img {
   position: relative;
@@ -41,7 +29,40 @@ img {
   display: block;
 }
 
+.text {
+  display: none;
+}
+.text-big-screen {
+  font-size: 50px;
+  width: 600px;
+  height: 120px;
+  left: -290px;
+  bottom: 160px;
+
+  position: absolute;
+  -webkit-text-stroke: 0.2px white;
+  color: rgba(225, 225, 225, 0.01);
+  transform: rotate(90deg);
+}
+
 @media screen and (max-width: 1000px) {
+  .text-big-screen {
+    display: none;
+  }
+  .text {
+    all: unset;
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+
+    font-size: 2vw;
+  }
   .wrapper {
     height: 100%;
   }
@@ -63,4 +84,15 @@ a {
 }
 a:hover {
   color: #f95959;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
