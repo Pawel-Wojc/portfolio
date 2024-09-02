@@ -1,0 +1,108 @@
+.wrapper {
+  margin-top: 70px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 20px;
+  width: 40%;
+}
+.project {
+  margin: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+.slider {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider img {
+  border-radius: 5px;
+  width: 100%;
+  display: none;
+  aspect-ratio: 1 / 0.8;
+}
+
+.slider .displaySlide {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 3px;
+  padding: 5px 10px;
+  font-size: 2rem;
+  background-color: hsla(0, 0%, 0%, 0.254);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.icon {
+  margin: 5px;
+  width: 40px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1899%)
+    hue-rotate(147deg) brightness(113%) contrast(78%);
+}
+
+.title-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-icons a {
+  margin-top: 8px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    margin: 10px;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .wrapper {
+    flex-direction: column;
+    margin-right: 5px;
+  }
+}
