@@ -10,9 +10,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-  changeMode() {
-    console.log('change mode');
-  }
   navbarClass: string = 'wrapper';
   changeNavbarType() {
     if (this.navbarClass === 'wrapper') {
