@@ -1,15 +1,16 @@
 <div class="flex p-10 flex-wrap">
   <div class="w-full flex justify-around">
-    <div>
-      <p class="text-6xl mt-36">Hello World!</p>
+    <div class="mt-5 lg:mt-36">
+      <p class="text-6xl">Hello World!</p>
       <p class="text-6xl">And welcome on my page</p>
     </div>
-    <div class="-z-10">
+    <div class="-z-10 hidden lg:block">
       <img src="aimage.png" alt="" class="max-w-xl float-end" />
     </div>
   </div>
 
-  <div class="flex justify-center w-full pt-20">
+  <div class="flex justify-center w-full pt-20 flex-wrap">
+    <hr class="h-1 w-full mb-8" />
     <img class="white m-4 w-12 h-12" src="./assets/c-sharp.svg" alt="" />
     <img class="white m-4 w-12 h-12" src="./assets/c-plusplus.svg" alt="" />
     <img class="white m-4 w-12 h-12" src="./assets/docker.svg" alt="" />
@@ -17,14 +18,15 @@
     <img class="white m-4 w-12 h-12" src="./assets/react.svg" alt="" />
     <img class="white m-4 w-12 h-12" src="./assets/typescript.svg" alt="" />
     <img class="white m-4 w-12 h-12" src="./assets/windows.svg" alt="" />
+    <hr class="h-1 w-full mt-8" />
   </div>
 
   <div class="m-auto w-full relative">
-    <p class="text-3xl justify-start p-10">Projects</p>
+    <p class="text-3xl justify-start p-10 text-center">Projects</p>
 
     <div class="bg-own-200 flex justify-around flex-wrap min-h-20 rounded-3xl">
       <a
-        class="bg-own-400 min-w-80 max-w-80 m-5 rounded-2xl z-10"
+        class="bg-own-400 max-w-80 m-5 rounded-2xl z-10"
         href="https://github.com/Pawel-Wojc/pzepp-Frontend"
         target="_blank"
       >
@@ -38,7 +40,7 @@
         </p>
       </a>
       <a
-        class="bg-own-400 min-w-80 max-w-80 m-5 rounded-2xl z-10"
+        class="bg-own-400 max-w-80 m-5 rounded-2xl z-10"
         href="https://github.com/DavePlayer/family-tree"
         target="_blank"
       >
@@ -50,7 +52,7 @@
         <p class="p-3">A web application to make family trees</p>
       </a>
 
-      <div class="bg-own-400 min-w-80 max-w-80 m-5 rounded-2xl">
+      <div class="bg-own-400 max-w-80 m-5 rounded-2xl">
         <div style="display: flex">
           <img
             src="./assets/angular.svg"
@@ -94,12 +96,12 @@
   </div>
 
   <div class="m-auto w-full">
-    <p class="text-3xl justify-start p-10">Homelab</p>
+    <p class="text-3xl justify-start p-10 text-center">Homelab</p>
     <a routerLink="/homelab">
       <div
         class="bg-own-200 flex justify-around flex-wrap min-h-20 rounded-3xl hover:ring ring-own-400"
       >
-        <div class="bg-own-400 min-w-80 m-5 rounded-2xl">
+        <div class="bg-own-400 m-5 rounded-2xl">
           <img
             src="./assets/truenas_scale-logo.png"
             alt="TrueNas Scale"
@@ -111,7 +113,7 @@
             cameras.
           </p>
         </div>
-        <div class="bg-own-400 min-w-80 m-5 rounded-2xl">
+        <div class="bg-own-400 m-5 rounded-2xl">
           <div style="display: flex">
             <img
               src="./assets/proxmox_logo_.png"
@@ -120,7 +122,9 @@
             />
           </div>
 
-          <p class="p-3">Some text</p>
+          <p class="p-3">
+            The hypervisor I use for hosting a few of my own services.
+          </p>
         </div>
       </div>
     </a>

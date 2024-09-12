@@ -1,14 +1,13 @@
 <div [ngClass]="navbarClass" class="wrapper">
-  <a
-    href="#home"
-    routerLink="/"
-    style="float: left"
-    class="text-2xl font-medium p-3"
-    >Paweł Wójcik</a
-  >
-  <a class="icon" (click)="changeNavbarType()">
-    <i class="fa fa-bars"></i>
-  </a>
+  <div class="hidden sm:block">
+    <a
+      href="#home"
+      routerLink="/"
+      style="float: left"
+      class="text-2xl font-medium p-3"
+      >Paweł Wójcik</a
+    >
+  </div>
 
   <!-- <button (click)="changeMode()">MODE</button> -->
 
@@ -20,7 +19,7 @@
   <button
     class="rounded-full text-m bg-cyan-950 float-end hover:bg-cyan-900 m-3 p-2 px-3 hover:ring-2 ring-white"
   >
-    <a href="#homelab" (click)="changeNavbarType()"> My homelab </a>
+    <a routerLink="/homelab" (click)="changeNavbarType()"> My homelab </a>
   </button>
   <button
     class="rounded-full text-m bg-cyan-950 float-end hover:bg-cyan-900 m-3 px-3 p-2 hover:ring-2 ring-white"

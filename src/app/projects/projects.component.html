@@ -1,94 +1,97 @@
-<div class="wrapper">
-  <div class="left">
-    <div class="project">
-      <div class="title-icons">
-        <p class="title">Famili tree</p>
-        <div>
-          <img class="icon" src="./../../assets/c-sharp.svg" alt="" />
-          <a href="https://github.com/DavePlayer/family-tree">
-            <img
-              class="icon"
-              src="./../../assets/github-icon-dark.svg"
-              alt="Github link"
-            />
-          </a>
-        </div>
-      </div>
-
-      <p>
-        A group project where we created a website for making, editing,
-        managing, and exporting family trees. I was responsible for
-        authorization, authentication, uploading files, and sending files to the
-        server. What I’ve learned: Security authorization and authentication
-        using JWT tokens. Creating, throwing, and handling own exceptions with
-        custom middleware. Working with DTOs.
-      </p>
+<div class="flex flex-wrap lg:grid lg:grid-cols-2 lg:grid-rows-2">
+  <div class="p-10">
+    <div class="flex m-4">
+      <img
+        class="white w-10 h-10 mx-2"
+        src="./../../assets/c-sharp.svg"
+        alt=""
+      />
+      <a href="https://github.com/DavePlayer/family-tree">
+        <img
+          class="white w-10 h-10 mx-2 mr-4"
+          src="./../../assets/github-icon-dark.svg"
+          alt="Github link"
+        />
+      </a>
+      <p class="text-3xl">Famili tree</p>
     </div>
-    <div class="project">
-      <div class="title-icons">
-        <p class="title">Train speed calibration</p>
-        <div>
-          <img class="icon" src="./../../assets/c-plusplus.svg" alt="C++" />
-          <a href="https://github.com/DavePlayer/family-tree">
-            <img
-              class="icon"
-              src="./../../assets/github-icon-dark.svg"
-              alt="Github link"
-            />
-          </a>
-        </div>
-      </div>
+    <p class="m-8">
+      A group project where we created a website for making, editing, managing,
+      and exporting family trees. I was responsible for authorization,
+      authentication, uploading files, and sending files to the server. What
+      I’ve learned: Security authorization and authentication using JWT tokens.
+      Creating, throwing, and handling own exceptions with custom middleware.
+      Working with DTOs.
+    </p>
+  </div>
 
-      <p>
-        Application to calibrate the speedometer by adjusting for changes in
-        wheel size on trains. During the operation of trains, the wheel
-        circumference decreases. This app uses GPS data to calibrate the
-        circumference, ensuring the speedometer remains accurate even in
-        situations where GPS access is not available. What I’ve learned: Using
-        dev containers in VSC, multithreading in C++
-      </p>
+  <div class="row-span-2 p-10">
+    <div class="flex m-4">
+      <img
+        class="white w-10 h-10 mx-2"
+        src="./../../assets/react.svg"
+        alt="s"
+      />
+      <a href="https://github.com/DavePlayer/family-tree">
+        <img
+          class="white w-10 h-10 mx-2 mr-4"
+          src="./../../assets/github-icon-dark.svg"
+          alt="Github link"
+        />
+      </a>
+      <p class="text-3xl">Moodle++</p>
+    </div>
+    <p class="m-8">
+      A copy of a well-known service called Moodle. It includes three user
+      types, course management, user management, and file sending. What I’ve
+      learned: React Router, private routes based on roles, serving props with
+      context, bootstrap, yup.
+    </p>
+    <div class="slider">
+      <div class="slides" #slides (scroll)="nextSlide()">
+        <img class="slide" src="./../../assets/pze/1.png" alt="photo1" />
+        <img class="slide" src="./../../assets/pze/2.png" alt="photo2" />
+        <img class="slide" src="./../../assets/pze/3.png" alt="photo3" />
+        <img class="slide" src="./../../assets/pze/4.png" alt="photo4" />
+        <img class="slide" src="./../../assets/pze/5.png" alt="photo5" />
+        <img class="slide" src="./../../assets/pze/6.png" alt="photo6" />
+        <img class="slide" src="./../../assets/pze/7.png" alt="photo7" />
+        <img class="slide" src="./../../assets/pze/8.png" alt="photo8" />
+        <img class="slide" src="./../../assets/pze/9.png" alt="photo9" />
+        <img class="slide" src="./../../assets/pze/10.png" alt="photo10" />
+        <img class="slide" src="./../../assets/pze/11.png" alt="photo11" />
+      </div>
+      <button class="prev" (click)="prevSlide()">&#10094;</button>
+      <button class="next" (click)="nextSlide()">&#10095;</button>
     </div>
   </div>
-  <div class="right">
-    <div class="project">
-      <div class="title-icons">
-        <p class="title">Moodle++</p>
-        <div>
-          <img class="icon" src="./../../assets/react.svg" alt="" />
-          <a href="https://github.com/DavePlayer/family-tree">
-            <img
-              class="icon"
-              src="./../../assets/github-icon-dark.svg"
-              alt="Github link"
-            />
-          </a>
-        </div>
-      </div>
 
-      <img src="" alt="" />
-      <div class="slider">
-        <div class="slides" #slides (scroll)="nextSlide()">
-          <img class="slide" src="./../../assets/pze/1.png" alt="photo1" />
-          <img class="slide" src="./../../assets/pze/2.png" alt="photo2" />
-          <img class="slide" src="./../../assets/pze/3.png" alt="photo3" />
-          <img class="slide" src="./../../assets/pze/4.png" alt="photo4" />
-          <img class="slide" src="./../../assets/pze/5.png" alt="photo5" />
-          <img class="slide" src="./../../assets/pze/6.png" alt="photo6" />
-          <img class="slide" src="./../../assets/pze/7.png" alt="photo7" />
-          <img class="slide" src="./../../assets/pze/8.png" alt="photo8" />
-          <img class="slide" src="./../../assets/pze/9.png" alt="photo9" />
-          <img class="slide" src="./../../assets/pze/10.png" alt="photo10" />
-          <img class="slide" src="./../../assets/pze/11.png" alt="photo11" />
-        </div>
-        <button class="prev" (click)="prevSlide()">&#10094;</button>
-        <button class="next" (click)="nextSlide()">&#10095;</button>
-      </div>
-      <p>
-        A copy of a well-known service called Moodle. It includes three user
-        types, course management, user management, and file sending. What I’ve
-        learned: React Router, private routes based on roles, serving props with
-        context, bootstrap, yup.
-      </p>
+  <div class="p-10">
+    <div class="flex m-4">
+      <img
+        class="white w-10 h-10 mx-2"
+        src="./../../assets/c-sharp.svg"
+        alt="C++"
+      />
+      <img
+        class="white w-10 h-10 mx-2"
+        src="./../../assets/angular.svg"
+        alt="C++"
+      />
+      <a href="https://github.com/Pawel-Wojc/screenvault">
+        <img
+          class="white w-10 h-10 mx-2 mr-4"
+          src="./../../assets/github-icon-dark.svg"
+          alt="Github link"
+        />
+      </a>
+      <p class="text-3xl">Screenvault</p>
     </div>
+
+    <p class="m-8">
+      A web application for sharing screenshots and more. You can share publicly
+      or simply copy and send a private link to a friend. Public posts can
+      receive reactions and comments. The application is under development.
+    </p>
   </div>
 </div>

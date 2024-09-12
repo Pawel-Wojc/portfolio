@@ -13,6 +13,10 @@ export const routes: Routes = [
     component: ProjectsComponent,
   },
   {
+    path: 'homelab',
+    component: HomelabComponent,
+  },
+  {
     path: '**',
     redirectTo: '',
   },
