@@ -1,54 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
+  color: #e3e3e3;
   padding: 0px;
   margin: 0px;
   min-height: 100vh;
-
-  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-
-  /* background: #233142; */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(
-    to top,
-    rgb(9, 32, 63) 0%,
-    rgb(83, 120, 149) 100%
-  );
-  /* background-image: #606c38; */
-  /* radial-gradient(
-    circle,
-    rgba(40, 54, 24, 1) 0%,
-    rgba(96, 108, 56, 1) 65%,
-    rgba(133, 147, 89, 1) 100%
-  ); */
-  /* radial-gradient(
-    circle,
-    rgba(35, 49, 66, 1) 0%,
-    rgba(49, 68, 92, 1) 70%,
-    rgba(63, 85, 115, 1) 100%
-  ); */
+  font-family: "Source Sans Pro" sans-serif;
+  background-color: #4f7390;
 }
-
-/* #233142 dark
-#455d7a grey
-#f95959 red
-#e3e3e3 white 
-
-
-white mode 
-radial-gradient(
-    circle,
-    rgba(91, 125, 166, 1) 0%,
-    rgba(128, 165, 212, 1) 70%,
-    rgba(195, 211, 232, 1) 100%
-  );
-
-
-
-
-*/

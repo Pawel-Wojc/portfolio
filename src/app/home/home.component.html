@@ -1,31 +1,128 @@
-<div class="wrapper">
-  <div class="welcome">
-    Hey, I'm Pawel <br />
-    And this is my currently under development portfolio site.
+<div class="flex p-10 flex-wrap">
+  <div class="w-full flex justify-around">
+    <div>
+      <p class="text-6xl mt-36">Hello World!</p>
+      <p class="text-6xl">And welcome on my page</p>
+    </div>
+    <div class="-z-10">
+      <img src="aimage.png" alt="" class="max-w-xl float-end" />
+    </div>
   </div>
 
-  <div class="aboutme">
-    <p>
-      I'm a final-year student at the Silesian University of Technology, with a
-      strong interest in IT and a knack for all things tech. I’m passionate
-      about programming and always up for the challenge of learning something
-      new. Beyond software, I enjoy getting my hands dirty with electronics and
-      have a solid understanding of Linux and various server technologies.
-      Whether it's coding, setting up servers, or exploring the latest gadgets,
-      I'm constantly driven by curiosity and a desire to innovate.
-    </p>
+  <div class="flex justify-center w-full pt-20">
+    <img class="white m-4 w-12 h-12" src="./assets/c-sharp.svg" alt="" />
+    <img class="white m-4 w-12 h-12" src="./assets/c-plusplus.svg" alt="" />
+    <img class="white m-4 w-12 h-12" src="./assets/docker.svg" alt="" />
+    <img class="white m-4 w-12 h-12" src="./assets/linux.svg" alt="" />
+    <img class="white m-4 w-12 h-12" src="./assets/react.svg" alt="" />
+    <img class="white m-4 w-12 h-12" src="./assets/typescript.svg" alt="" />
+    <img class="white m-4 w-12 h-12" src="./assets/windows.svg" alt="" />
   </div>
-  <div class="skills">
-    <a routerLink="/">
-      <img src="./assets/c-sharp.svg" alt="" />
-      <img src="./assets/c-plusplus.svg" alt="" />
-      <img src="./assets/docker.svg" alt="" />
-      <img src="./assets/linux.svg" alt="" />
-      <img src="./assets/react.svg" alt="" />
-      <img src="./assets/typescript.svg" alt="" />
-      <img src="./assets/windows.svg" alt="" /> <br />
-      Check out my project</a
-    >
+
+  <div class="m-auto w-full relative">
+    <p class="text-3xl justify-start p-10">Projects</p>
+
+    <div class="bg-own-200 flex justify-around flex-wrap min-h-20 rounded-3xl">
+      <a
+        class="bg-own-400 min-w-80 max-w-80 m-5 rounded-2xl z-10"
+        href="https://github.com/Pawel-Wojc/pzepp-Frontend"
+        target="_blank"
+      >
+        <div style="display: flex">
+          <img src="./assets/react.svg" alt="s" class="w-7 h-7 white m-4" />
+          <p class="font-medium m-4">Moodle ++</p>
+        </div>
+
+        <p class="p-3">
+          Copy of moodle service, with three types of users and files managing
+        </p>
+      </a>
+      <a
+        class="bg-own-400 min-w-80 max-w-80 m-5 rounded-2xl z-10"
+        href="https://github.com/DavePlayer/family-tree"
+        target="_blank"
+      >
+        <div style="display: flex">
+          <img src="./assets/c-sharp.svg" alt="s" class="w-7 h-7 white m-4" />
+          <p class="font-medium m-4">Family tree</p>
+        </div>
+
+        <p class="p-3">A web application to make family trees</p>
+      </a>
+
+      <div class="bg-own-400 min-w-80 max-w-80 m-5 rounded-2xl">
+        <div style="display: flex">
+          <img
+            src="./assets/angular.svg"
+            alt="s"
+            class="w-7 h-7 white my-4 ml-4"
+          />
+          <img
+            src="./assets/c-sharp.svg"
+            alt="s"
+            class="w-7 h-7 white my-4 ml-2"
+          />
+          <p class="font-medium m-4">Screenvault</p>
+        </div>
+
+        <p class="p-3">
+          Currently in build web application to store screenshots, share them
+          via links, and publish them
+        </p>
+        <p class="p-3 z-10">
+          <a
+            class="mx-2"
+            href="https://screenvault-alpha.vercel.app/"
+            target="_blank"
+            >Live demo</a
+          >
+          <a
+            class="mx-2"
+            href="https://github.com/Pawel-Wojc/screenvault"
+            target="_blank"
+            >Github</a
+          >
+          <a
+            class="mx-2"
+            href="https://github.com/Pawel-Wojc/screenvault_api"
+            target="_blank"
+            >Github - api</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="m-auto w-full">
+    <p class="text-3xl justify-start p-10">Homelab</p>
+    <a routerLink="/homelab">
+      <div
+        class="bg-own-200 flex justify-around flex-wrap min-h-20 rounded-3xl hover:ring ring-own-400"
+      >
+        <div class="bg-own-400 min-w-80 m-5 rounded-2xl">
+          <img
+            src="./assets/truenas_scale-logo.png"
+            alt="TrueNas Scale"
+            class="h-7 m-4"
+          />
+
+          <p class="p-3">
+            The server I use for creating backups and recording footage from
+            cameras.
+          </p>
+        </div>
+        <div class="bg-own-400 min-w-80 m-5 rounded-2xl">
+          <div style="display: flex">
+            <img
+              src="./assets/proxmox_logo_.png"
+              alt="TrueNas Scale"
+              class="h-7 m-4"
+            />
+          </div>
+
+          <p class="p-3">Some text</p>
+        </div>
+      </div>
+    </a>
   </div>
 </div>
-<app-homelab id="homelab"></app-homelab>

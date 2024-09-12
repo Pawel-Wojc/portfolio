@@ -1,24 +1,7 @@
-.wrapper {
-  display: none;
-}
-.icons {
-  padding: 0px;
-  background: #233142;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
-  margin: 0px;
-}
-.icons img {
-  width: 40px;
-  padding: 5px;
+.white {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1899%)
+    hue-rotate(147deg) brightness(113%) contrast(78%);
 }
 
 @media screen and (max-width: 1000px) {
-  .wrapper {
-    margin-top: auto;
-    display: inline;
-    text-align: center;
-
-    justify-content: center;
-  }
 }

@@ -1,17 +1,30 @@
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-
 <div [ngClass]="navbarClass" class="wrapper">
-  <a href="#home" routerLink="/" style="float: left">Paweł Wójcik</a>
+  <a
+    href="#home"
+    routerLink="/"
+    style="float: left"
+    class="text-2xl font-medium p-3"
+    >Paweł Wójcik</a
+  >
   <a class="icon" (click)="changeNavbarType()">
     <i class="fa fa-bars"></i>
   </a>
 
   <!-- <button (click)="changeMode()">MODE</button> -->
 
-  <a href="#home" routerLink="/" (click)="changeNavbarType()">HOME</a>
-  <a routerLink="/projects" (click)="changeNavbarType()"> PROJECTS </a>
-  <a href="#homelab" (click)="changeNavbarType()"> MY HOMELAB </a>
+  <button
+    class="rounded-full text-m bg-cyan-950 float-end hover:bg-cyan-900 m-3 px-3 p-2 hover:ring-2 ring-white"
+  >
+    <a routerLink="/projects" (click)="changeNavbarType()"> Projects</a>
+  </button>
+  <button
+    class="rounded-full text-m bg-cyan-950 float-end hover:bg-cyan-900 m-3 p-2 px-3 hover:ring-2 ring-white"
+  >
+    <a href="#homelab" (click)="changeNavbarType()"> My homelab </a>
+  </button>
+  <button
+    class="rounded-full text-m bg-cyan-950 float-end hover:bg-cyan-900 m-3 px-3 p-2 hover:ring-2 ring-white"
+  >
+    <a href="#home" routerLink="/" (click)="changeNavbarType()">Home</a>
+  </button>
 </div>
